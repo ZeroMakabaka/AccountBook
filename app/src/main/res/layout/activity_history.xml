@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".HistoryActivity"
+    android:orientation="vertical"
+    android:background="@color/green"
+    android:paddingTop="20dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/grey_f3">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/green">
+
+            <ImageView
+                android:id="@+id/history_iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/it_back" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/history_records"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_toRightOf="@+id/history_iv_back"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/history_iv_calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/it_rili" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/history_tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2022年5月"
+                android:textColor="@color/green" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/month_out"
+            android:layout_margin="10dp"
+            android:visibility="visible"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/history_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/recyclerview_shape"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:visibility="visible"/>
+        <TextView
+            android:id="@+id/history_tv_out_not_msg"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:text="@string/not_data"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:visibility="gone"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/month_in"
+            android:layout_marginLeft="10dp"
+            android:visibility="visible"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/history_rv_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/recyclerview_shape"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="visible"/>
+        <TextView
+            android:id="@+id/history_tv_in_not_msg"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:text="@string/not_data"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+
+</ScrollView>

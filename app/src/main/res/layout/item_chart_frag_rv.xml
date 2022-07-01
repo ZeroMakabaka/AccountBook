@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@color/white"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+    <ImageView
+        android:id="@+id/item_chart_frag_iv"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@mipmap/ic_yanjiu_fs"/>
+    <TextView
+        android:id="@+id/item_chart_frag_tv_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:layout_toRightOf="@+id/item_chart_frag_iv"
+        android:layout_marginLeft="10dp"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/item_chart_frag_tv_pert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="17%"
+        android:layout_toRightOf="@id/item_chart_frag_tv_type"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:id="@+id/item_chart_frag_tv_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="￥ 1000.0"
+        android:layout_alignParentRight="true"
+        android:textSize="16sp" />
+    <LinearLayout
+        android:id="@+id/item_chart_frag_lv_per"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_f4"
+        android:layout_below="@+id/item_chart_frag_tv_total"
+        android:layout_toRightOf="@+id/item_chart_frag_iv"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"/>
+
+</RelativeLayout>

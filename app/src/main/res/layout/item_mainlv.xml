@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+
+    android:background="@drawable/item_background">
+
+    <ImageView
+        android:layout_margin="10dp"
+        android:id="@+id/item_mainlv_iv"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@mipmap/ic_yanjiu_fs" />
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/item_mainlv_iv"
+        android:layout_marginStart="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/item_mainlv_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="零食"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/item_mainlv_tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="辣条"
+            android:textSize="12sp"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:id="@+id/item_lv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/item_mainlv_tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥10"
+            android:layout_gravity="right"
+            android:textStyle="bold"
+            android:textColor="@color/green_01"/>
+        <TextView
+            android:id="@+id/item_mainlv_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18：00"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/item_lv1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black_shadow"/>
+
+</RelativeLayout>

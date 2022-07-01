@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+    <TextView
+        android:id="@+id/record_desc_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_desc"
+        android:textSize="16sp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/record_desc_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/record_desc_tv"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white"
+        android:hint="@string/desc"
+        android:textSize="14sp">
+
+        <requestFocus></requestFocus>
+    </EditText>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/record_desc_et"
+        android:padding="10dp">
+        <Button
+            android:id="@+id/record_desc_cancel_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/desc_cancel_btn_bg"
+            android:text="@string/cancel"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/green"/>
+        <Button
+            android:id="@+id/record_desc_ensure_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/desc_ensure_btn_bg"
+            android:text="@string/ensure"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

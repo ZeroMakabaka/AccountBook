@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecordActivity"
+    android:orientation="vertical"
+    android:background="@color/green"
+    android:paddingTop="20dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/grey_f3">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/green">
+            <ImageButton
+                android:id="@+id/record_iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ih_error"
+                android:layout_marginLeft="10dp"
+                android:background="@color/transparent"/>
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/record_tabs"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                app:tabGravity="center"
+                app:tabMode="fixed"
+                app:tabTextColor="@color/grey_light"
+                app:tabSelectedTextColor="@color/white"
+                app:tabIndicatorColor="@color/white">
+            </com.google.android.material.tabs.TabLayout>
+
+        </RelativeLayout>
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/record_vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+</LinearLayout>

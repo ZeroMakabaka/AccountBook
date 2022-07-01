@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">小猪记账</string>
+    <string name="edit">记一笔</string>
+    <string name="month_in">总收入</string>
+    <string name="month_total">本月收支统计</string>
+    <string name="month_out">总支出</string>
+    <string name="budget">结余</string>
+    <string name="set_budget">设置预算</string>
+    <string name="analyse">图表分析</string>
+    <string name="add_desc">添加备注</string>
+    <string name="desc">备注</string>
+    <string name="re_edit">编辑</string>
+    <string name="ensure">确定</string>
+    <string name="cancel">取消</string>
+    <string name="delete">删除</string>
+    <string name="input_time_hint">请输入时间（24小时制）</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="moneySignal">￥</string>
+    <string name="search_hint">请输入关键字</string>
+    <string name="not_found_msg">亲， 没有找到匹配结果呢~~</string>
+    <string name="homePage">首页</string>
+    <string name="biaogePage">图表</string>
+    <string name="myPage">我的</string>
+    <string name="recordPage">明细</string>
+    <string name="history_records">账单记录</string>
+    <string name="user_setting">用户设置</string>
+    <string name="version">版本 1.0</string>
+    <string name="rights_msg">© 2022-2023 xiaozhu.com. All rights reserved</string>
+    <string name="recordsDetails">账单详情</string>
+    <string name="outcome">支出</string>
+    <string name="income">收入</string>
+    <string name="not_data">＞﹏＜ 抱歉，小猪暂时没有找到数据呢~</string>
+    <string name="total_out">总支出：</string>
+    <string name="total_in">总收入：</string>
+    <string name="today_out">今日支出:</string>
+    <string name="today_in">今日收入:</string>
+    <string name="today_count">支出笔数：</string>
+    <string name="today_count_in">收入笔数：</string>
+</resources>
